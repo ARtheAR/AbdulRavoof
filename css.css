@@ -1,0 +1,97 @@
+/* @keyframes example {
+    0% {
+      color:#0000ff;
+    }
+    
+    50% {
+      color:#6e6eff;
+      font-size: 600%;
+    }
+    
+    100% {
+      color:#ffffff;
+    }
+  }
+
+@keyframes bounce {
+  0% {
+    width: 250%;
+  }
+
+  25% {
+    width: 60%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  75% {
+    width: 160%;
+  }
+
+  100% {
+    width: 100%;
+  }
+} */
+
+.Title{
+  color: rgb(235, 243, 255);
+  font-size:400%;
+  display: inline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0px;
+  padding-left: 0px;
+  transition: font-size 0.4s,color 0.6s;
+  /* animation-name: bounce;
+  animation-duration: 1s; */
+  position: relative;
+  top: 200px;
+  left: 550px;
+}
+
+.Title:hover{
+  color: rgb(255, 0, 0);
+  text-shadow: none;
+  font-size:600%;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+#blue {
+  color: rgb(235, 243, 255);
+  font-size:400%;
+  display: inline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0px;
+  padding-left: 0px;
+  transition: font-size 0.4s,color 0.6s;
+  /* animation-name: bounce;
+  animation-duration: 1s; */
+  position: relative;
+  top: 200px;
+  left: 550px;
+}
+
+#blue:hover {
+  color: rgb(0, 0, 255);
+  text-shadow: none;
+  font-size:900%;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+#HTML{
+  background-color: rgb(20, 19, 31);
+}
+
+.img {
+  width: 10%;
+  height: 10%;
+  display: inline;
+}
+
+.img:hover{
+  width: 15%;
+  height: 15%;
+}

@@ -1,41 +1,9 @@
-/* @keyframes example {
-    0% {
-      color:#0000ff;
-    }
-    
-    50% {
-      color:#6e6eff;
-      font-size: 600%;
-    }
-    
-    100% {
-      color:#ffffff;
-    }
-  }
+body {
+  margin: 0px;
+  background-color: rgb(15, 0, 20);
+}
 
-@keyframes bounce {
-  0% {
-    width: 250%;
-  }
-
-  25% {
-    width: 60%;
-  }
-
-  50% {
-    width: 100%;
-  }
-
-  75% {
-    width: 160%;
-  }
-
-  100% {
-    width: 100%;
-  }
-} */
-
-.Title{
+.red-name{
   color: rgb(235, 243, 255);
   font-size:400%;
   display: inline;
@@ -43,14 +11,10 @@
   margin: 0px;
   padding-left: 0px;
   transition: font-size 0.4s,color 0.6s;
-  /* animation-name: bounce;
-  animation-duration: 1s; */
-  position: relative;
-  top: 200px;
-  left: 550px;
+  letter-spacing: -0.3vw;
 }
 
-.Title:hover{
+.red-name:hover{
   color: rgb(255, 0, 0);
   text-shadow: none;
   font-size:600%;
@@ -58,7 +22,7 @@
   animation-duration: 1s;
 }
 
-#blue {
+#blue-name {
   color: rgb(235, 243, 255);
   font-size:400%;
   display: inline;
@@ -66,14 +30,10 @@
   margin: 0px;
   padding-left: 0px;
   transition: font-size 0.4s,color 0.6s;
-  /* animation-name: bounce;
-  animation-duration: 1s; */
-  position: relative;
-  top: 200px;
-  left: 550px;
+  letter-spacing: -0.1vw;
 }
 
-#blue:hover {
+#blue-name:hover {
   color: rgb(0, 0, 255);
   text-shadow: none;
   font-size:900%;
@@ -82,16 +42,17 @@
 }
 
 #HTML{
-  background-color: rgb(20, 19, 31);
+  background-color: rgb(15, 0, 20);
 }
 
-.img {
-  width: 10%;
-  height: 10%;
-  display: inline;
+.small-intro {
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.2vw;
+  transition: font-size 0.4s , color 1s;
+  font-size: 100%;
 }
 
-.img:hover{
-  width: 15%;
-  height: 15%;
+.small-intro:hover {
+  font-size: 150%;
+  color: rgb(255, 0, 0);
 }

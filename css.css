@@ -41,8 +41,13 @@ body {
   animation-duration: 1s;
 }
 
-#HTML{
+#intro{
   background-color: rgb(15, 0, 20);
+  background-image: url('images/Banner.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 50vh;
 }
 
 .small-intro {
@@ -56,3 +61,11 @@ body {
   font-size: 150%;
   color: rgb(255, 0, 0);
 }
+/* 
+#banner-wrapper {
+  
+} */
+
+/* #Banner {
+  
+} */

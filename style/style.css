@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 
 * {
   padding: 0;
@@ -10,19 +11,16 @@
   user-select: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body{
-  background-color: rgb(25, 0, 35);
+  background-color: #250035;
+  scroll-behavior: smooth;
 }
 
 #canvas {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(25, 0, 35);
+  background-color: #530153;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -47,15 +45,14 @@ body{
   display: inline;
   color: #ffffff;
   font-size: 5vw;
-  font-family: 'Water Brush', cursive;
+  font-family: 'Water Brush';
   transition: all 0.3s ease-in 0.1s;
-  padding-left: 1vw;
   z-index: 2;
   position: relative;
 }
 
 .top-ar-heading-main:hover {
-  color: #0000ff;
+  color: #0045DD;
 }
 
 .major-headings {
@@ -94,7 +91,7 @@ body{
   align-items: center;
   justify-content: center;
   padding-left: 1vw;
-  font-family: 'Mali', cursive;
+  font-family: 'Mali';
   font-size: 0.8vw;
 }
 
@@ -107,7 +104,7 @@ body{
 .div-background {
   font-size: 20vw;
   color:rgb(150, 150, 150);
-  font-family: 'Water Brush', cursive;
+  font-family: 'Water Brush';
   position: absolute;
   margin-left: 60%;
   letter-spacing: 0.5vw;
@@ -115,12 +112,13 @@ body{
 
 .headings {
   color: #ffffff;
-  font-family: 'Water Brush', cursive;
+  font-family: 'Water Brush';
   font-size: 4vw;
   padding-left: 1vw;
   z-index: 2;
   position: relative;
-  transition: 0.3s;
+  opacity: 0;
+  transition: all 2s ,color 0.3s;
 }
 
 .headings::after {
@@ -128,7 +126,7 @@ body{
   display:block;
   width: 80vw;
   height: 0.2vw;
-  background: linear-gradient(to right,#0000ff,#250035);
+  background: linear-gradient(to right,#0045DD,#181818);
   position: absolute;
   right: 0;
   top: 50%;
@@ -136,18 +134,20 @@ body{
 }
 
 .headings:hover {
-  color: #0000ff;
+  color: #0045DD;
 }
 
 .headings-sub {
   color: #ff0000;
-  font-family: 'Bungee', cursive;
+  font-family: 'Bungee';
   font-size: 4vw;
   padding-left: 1vw;
   z-index: 2;
   position: relative;
   text-align: center;
   letter-spacing: 0.4vw;
+  opacity: 0;
+  transition: all 2s;
 }
 
 .headings-sub::after {
@@ -155,7 +155,7 @@ body{
   display:block;
   width: 35vw;
   height: 1vw;
-  background: linear-gradient(to right,#ff0000,#250035);
+  background: linear-gradient(to right,#ff0000,#181818);
   position: absolute;
   right: 0;
   top: 50%;
@@ -167,7 +167,7 @@ body{
   display:block;
   width: 36vw;
   height: 1vw;
-  background: linear-gradient(to left,#ff0000,#250035);
+  background: linear-gradient(to left,#ff0000,#181818);
   position: absolute;
   left: 0;
   top: 50%;
@@ -176,15 +176,17 @@ body{
 
 .p-styles {
   color: #ffffff;
-  font-family: 'Mali', cursive;
+  font-family: 'Mali';
   padding-left: 1vw;
   z-index: 2;
   position: relative;
+  opacity: 0;
+  transition: all 2s;
 }
 
 .about-hi-im {
-  color: #0000ff;
-  font-family: 'Mali', cursive;
+  color: #0045DD;
+  font-family: 'Mali';
   z-index: 2;
   position: relative;
   transition: all 0.3s ease-in 0.1s;
@@ -196,14 +198,14 @@ body{
 
 .about-ar {
   color: #ff0000;
-  font-family: 'Water Brush', cursive;
+  font-family: 'Water Brush';
   z-index: 2;
   position: relative;
   transition: all 0.3s ease-in 0.1s;
 }
 
 .about-ar:hover {
-  color: #0000ff;
+  color: #0045DD;
 }
 
 .timeline-container {
@@ -251,6 +253,14 @@ body{
   justify-content: space-between;
 }
 
+#timeline-intr {
+  opacity: 1;
+  position: absolute;
+  margin-top: 22vw;
+  line-height: 3vw;
+  margin-left: 1vw;
+}
+
 .minor-headings {
   display: flex;
   color: #ff0000;
@@ -258,16 +268,81 @@ body{
   letter-spacing: 0.3vw;
   font-size: 1.8vw;
   font-family: 'Roboto', sans-serif;
-  transition: all 0.3s ease-in 0.1s;
+  transition: color 0.3s ease-in 0.1s;
   z-index: 2;
   position: relative;
   margin-left: 5vw;
+
 }
 
 .minor-headings:hover {
-  color: #0000ff;
+  color: #0045DD;
+}
+
+#pink-headings {
+  color: #ff00ff;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2vw;
+}
+
+#green-headings {
+  color: #00ff00;
+}
+
+#green1-headings {
+  display: flex; 
+  justify-content: flex-end;
+  margin-right: 7vw;
+  color: #00ff00;
+}
+
+.projects-title {
+  color: #ff0000;
+  font-family: 'Bungee';
+  font-size: 4vw;
+  padding-left: 1vw;
+  z-index: 2;
+  position: relative;
+  text-align: left;
+  letter-spacing: 0.4vw;
+  transition: all 2s;
+}
+
+.projects-title::after {
+  content: "";
+  display:block;
+  width: 72vw;
+  height: 1vw;
+  background: linear-gradient(to right,#ff0000,#181818);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.progress {
+  text-align: center;
+  color: #ffffff;
+  font-size: 5vw;
+  font-family: 'Rubik Glitch';
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.active {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px){
+  .mobile {
+    font-size: 50px;
+    color: #fff;
+  }
+
+.a {
+  display: none;
+}
 }

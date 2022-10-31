@@ -72,6 +72,19 @@ body{
   color: #ff0000;
 }
 
+.major-heading {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  justify-content: center;
+  letter-spacing: 0.3vw;
+  font-size: 3vw;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease-in 0.1s;
+  z-index: 2;
+  position: relative;
+}
+
 #inst-canvas-holder {
   background-color: #1b1b1b7d;
   width: 6vw;
@@ -119,6 +132,7 @@ body{
   position: relative;
   opacity: 0;
   transition: all 2s ,color 0.3s;
+  width: 0%;
 }
 
 .headings::after {
@@ -148,6 +162,7 @@ body{
   letter-spacing: 0.4vw;
   opacity: 0;
   transition: all 2s;
+  width: 0%;
 }
 
 .headings-sub::after {
@@ -179,9 +194,9 @@ body{
   font-family: 'Mali';
   padding-left: 1vw;
   z-index: 2;
-  position: relative;
-  opacity: 0;
-  transition: all 2s;
+  position: relative; 
+  width: 50%; 
+
 }
 
 .about-hi-im {
@@ -334,15 +349,17 @@ body{
 
 .active {
   opacity: 1;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px){
   .mobile {
     font-size: 50px;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
   }
 
-.a {
+  .a {
   display: none;
-}
+  }
 }
